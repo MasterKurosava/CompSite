@@ -9,7 +9,7 @@ header#header
         circle(cx='25', cy='25', r="25", fill='url(#gradLogo)')
         circle(cx='25', cy='25', r="12", fill='black')
     ul.nav_list 
-      each name, link in {'../index.html':'Главная','../sections/contacts.html':'Контакты'}
+      each name, link in {'../index.html':'Главная','./sections/contacts.html':'Контакты'}
         li.nav_listItem
           a(href=link)=name
     button.nav_loginButton.btn-blue Зайти в кабинет
