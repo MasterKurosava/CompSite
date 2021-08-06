@@ -1,0 +1,53 @@
+
+#header{
+  width:1920px;
+  max-width: 1920px;
+  z-index: 10;
+  top: 0;
+  position:fixed;
+  padding: 20px 0;
+  width: 100%;
+  background-color: rgba($color: #000000, $alpha: 0.8);
+  #nav{
+    height: 100%;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .nav_logo{
+      margin: auto 0;
+    }
+    .nav_list{
+      width:840px;
+      margin-left: 200px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      list-style: none;
+      .nav_listItem{
+        margin-left: 60px;
+        padding: 10px 0;
+        a{
+          color: white;
+          font-size: 16px;
+        }
+      }
+    }
+    .nav_loginButton, .btn-blue{
+      border: none;
+      border-radius: 20px;
+      font-size: 16px;
+      color: white;
+      width: 183px;
+      min-width: 183px;
+      height: 44px;
+      background: linear-gradient(to right, #C89AFC, #7C6AFA);
+    }
+    .btn-blue:hover{
+      background-size: 150% 150%;
+      animation: btnAnim 2s ease infinite;
+    }
+  }
+}

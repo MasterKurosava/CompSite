@@ -1,0 +1,15 @@
+header#header
+  nav#nav 
+    .nav_logo 
+      svg(width="60px" height="60px")
+        defs
+          radialgradient#gradLogo(cx='0.9', cy='0.6', r='0.8')
+            stop(offset='0%', stop-color='#451046')
+            stop(offset='60%', stop-color='#DF5950')
+        circle(cx='25', cy='25', r="25", fill='url(#gradLogo)')
+        circle(cx='25', cy='25', r="12", fill='black')
+    ul.nav_list 
+      each name, link in {'../index.html':'Главная','../sections/contacts.html':'Контакты'}
+        li.nav_listItem
+          a(href=link)=name
+    button.nav_loginButton.btn-blue Зайти в кабинет

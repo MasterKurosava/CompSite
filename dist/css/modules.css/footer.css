@@ -1,0 +1,38 @@
+#footer {
+  position: fixed;
+  bottom: 0;
+  min-width: 1920px;
+  background-color: #121212;
+}
+#footer .footer_container {
+  margin: 0 auto;
+  width: 1296px;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 134px;
+  padding-top: 36px;
+}
+#footer .footer_container .footer_btn button, #footer .footer_container .btn-orange {
+  min-width: 169px;
+  height: 44px;
+  color: white;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(to right, #DF5950, #451046);
+  background-size: 150% 150%;
+  animation: btnAnim 2s ease infinite;
+}
+#footer .footer_container .footer_students {
+  display: flex;
+  justify-content: space-between;
+  min-width: 250px;
+  margin: 16px 0;
+}
+#footer .footer_container .footer_stonks .footer_students:first-child {
+  margin-top: 10px;
+}

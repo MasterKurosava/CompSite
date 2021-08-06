@@ -1,0 +1,193 @@
+@import url(modules.css/header.css);
+@import url(modules.css/footer.css);
+@import url(animations/anim.css);
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+}
+* body {
+  overflow-x: hidden;
+  width: 1920px;
+  height: 100%;
+  background: url("https://kartinkin.com/uploads/posts/2021-04/1617597757_48-p-glubokii-chernii-fon-51.jpg") 0 0 repeat;
+  background-size: 120%;
+}
+* a {
+  text-decoration: none;
+}
+* [class*=-grey] {
+  opacity: 0.4;
+}
+* .btn-blue:hover,
+* .btn-orange:hover {
+  cursor: pointer;
+}
+
+.timeInfo {
+  width: 1603px;
+  height: 560px;
+  background-image: url("https://storage-asset.msi.com/global/picture/image/feature/PC-Components/MAG-FORGE101M/kv_101m.jpg");
+  background-repeat: no-repeat;
+  background-size: 120%;
+  background-position: -140px 0;
+  padding: 270px 0 0 317px;
+}
+.timeInfo .timeInfo_info {
+  display: block;
+  position: relative;
+  min-width: 200px;
+}
+.timeInfo .timeInfo_info .timeInfo_text h1 {
+  line-height: 140%;
+  color: white;
+  font-size: 64px;
+}
+.timeInfo .timeInfo_info .timeInfo_list {
+  list-style: none;
+  margin-top: 40px;
+  color: white;
+  display: flex;
+}
+.timeInfo .timeInfo_info .timeInfo_list .timeInfo_infoBlock {
+  text-align: center;
+  margin-right: 30px;
+  width: 102px;
+  height: 112px;
+  background-color: #121212;
+  border-radius: 5px;
+}
+.timeInfo .timeInfo_info .timeInfo_list .timeInfo_infoBlock .timeInfo_blockText {
+  line-height: 140%;
+  margin-top: 20px;
+  font-size: 36px;
+}
+.timeInfo .timeInfo_info .timeInfo_list .timeInfo_infoBlock .timeInfo_blockText-grey {
+  font-size: 16px;
+  opacity: 0.4;
+}
+
+.teachers {
+  margin: auto;
+  width: 1100px;
+  color: white;
+}
+.teachers .teachers_header {
+  font-size: 27px;
+  line-height: 67, 2px;
+  margin: 250px 0 50px 20px;
+}
+.teachers .teachers_main {
+  display: flex;
+  justify-content: space-around;
+}
+.teachers .teachers_main .teachers_person {
+  width: 220px;
+  text-align: center;
+}
+.teachers .teachers_main .teachers_person div {
+  margin: 0 auto 30px auto;
+  width: 190px;
+  height: 190px;
+  border-radius: 100px;
+  background-size: contain;
+}
+.teachers .teachers_main .teachers_person .teachers_photo-1 {
+  background-image: url("../img/1.jpg");
+}
+.teachers .teachers_main .teachers_person .teachers_photo-2 {
+  background-image: url("../img/2.png");
+}
+.teachers .teachers_main .teachers_person .teachers_photo-3 {
+  background-image: url("../img/3.png");
+}
+.teachers .teachers_main .teachers_person p {
+  margin: 25px 0 30px;
+  opacity: 0.7;
+}
+.teachers .teachers_main .teachers_person .teachers_biograf.btn-grey {
+  border-radius: 20px;
+  border: 1px solid white;
+  padding: 10px 25px;
+  font-size: 16px;
+  opacity: 1;
+  color: white;
+  background: none;
+}
+.teachers .teachers_main .teachers_person .btn-grey:hover {
+  animation: btnGreyAnim 0.5s;
+  color: #121212;
+  background-color: white;
+}
+
+.add {
+  margin: 100px auto 180px auto;
+  width: 1100px;
+  color: white;
+}
+.add .add_container {
+  text-align: center;
+}
+.add .add_container h1 {
+  font-size: 40px;
+  margin-bottom: 45px;
+}
+.add .add_container p {
+  margin: 0 auto 70px auto;
+  opacity: 0.8;
+  max-width: 400px;
+  line-height: 160%;
+}
+.add .add_container .add_emailSend input {
+  margin-left: 60px;
+  border: none;
+  border-radius: 20px;
+  padding: 0 20px;
+  font-size: 18px;
+  color: white;
+  width: 353px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.add .add_container .add_emailSend input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+.add .add_container .add_emailSend input:focus {
+  outline: none;
+}
+.add .add_container .add_emailSend .add_btnSub {
+  position: relative;
+  right: 35px;
+  min-width: 169px;
+  height: 44px;
+  color: white;
+  margin-top: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(to right, #DF5950, #451046);
+  animation: btnAnim 2s ease infinite;
+}
+.add .add_container .add_emailSend .btn-orange:hover {
+  background-size: 150% 150%;
+  animation: btnAnim 2s ease infinite;
+}
+.add .add_container .add_social {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto 0 auto;
+  height: 50px;
+  width: calc(50px * 4 + 30px*5);
+}
+.add .add_container .add_social div {
+  border-radius: 100px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(to right, #C89AFC, #7C6AFA);
+  margin: 15px;
+}
+.add .add_container .add_social div img {
+  margin-top: 8px;
+}

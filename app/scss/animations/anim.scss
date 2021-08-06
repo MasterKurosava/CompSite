@@ -1,0 +1,21 @@
+@keyframes btnAnim {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+@keyframes btnGreyAnim {
+  from{
+    color: rgba($color: #FFFFFF, $alpha: 1.0);
+    background-color: rgba($color: #FFFFFF, $alpha: 0);
+  }
+  to{
+    color: rgba($color: #121212, $alpha: 1.0);
+    background-color: rgba($color: #FFFFFF, $alpha: 1);
+  }
+}

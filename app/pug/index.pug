@@ -1,0 +1,23 @@
+extends layout.pug 
+
+block head
+  link(rel="stylesheet", href="css/main.css", type="text/css")
+  title Главная
+block main
+  section.timeInfo
+    .timeInfo_info 
+      .timeInfo_text
+        h1 Первый курс<br> по компьютерной сборке
+      ul.timeInfo_list
+        li.timeInfo_infoBlock
+          p.timeInfo_blockText <strong>18</strong>
+          p.timeInfo_blockText-grey Дней
+        li.timeInfo_infoBlock
+          p.timeInfo_blockText <strong>18</strong>
+          p.timeInfo_blockText-grey Часов
+        li.timeInfo_infoBlock
+          p.timeInfo_blockText <strong>18</strong>
+          p.timeInfo_blockText-grey Минут
+        li.timeInfo_infoBlock
+          p.timeInfo_blockText <strong>18</strong>
+          p.timeInfo_blockText-grey Секунд

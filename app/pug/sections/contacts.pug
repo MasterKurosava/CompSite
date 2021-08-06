@@ -1,0 +1,42 @@
+extends ../layout.pug
+block head 
+  link(rel="stylesheet", href="../css/main.css", type="text/css")
+  title Контакты
+block main
+  section.teachers
+    .teachers_header 
+      h1 Ваши преподаватели:  
+    .teachers_main 
+      .teachers_person
+        .teachers_photo-1
+        h2 Дмитрий Иванов
+        p Специалист по видеокартам
+        button.teachers_biograf.btn-grey Биография
+      .teachers_person
+        .teachers_photo-2
+        h2 Дмитрий Иванов
+        p Специалист по видеокартам
+        button.teachers_biograf.btn-grey Биография
+      .teachers_person
+        .teachers_photo-3
+        h2 Дмитрий Иванов
+        p Специалист по видеокартам
+        button.teachers_biograf.btn-grey Биография
+  section.add 
+    .add_container 
+      h1 Статьи каждую неделю
+      p.add_text Больше 90% учеников прошли полный курс и смогли собрать свой первый компьютер
+      .add_emailSend 
+        input(type="E-mail",placeholder="E-mail")
+        button.add_btnSub.btn-orange Подписаться
+      .add_social 
+        .add_vk 
+          img(src="../img/vk.png", alt="vk")
+        .add_yt
+          img(src="../img/yt.png", alt="yt")
+        .add_fb 
+          img(src="../img/inst.png", alt="inst")
+        .add_inst
+          img(src="../img/twitter.png", alt="twitter")
+block scripts
+  script(src="../js/main.js") 
